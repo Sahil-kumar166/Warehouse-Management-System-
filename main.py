@@ -11,7 +11,7 @@ def main():
     print("==================================================")
     
     while True:
-        print("\nEnter the items you want to pick, separated by commas (e.g., ITEM-001, ITEM-005).")
+        print("\nEnter the items you want to pick, separated by commas ")
         print("Type 'exit' or 'quit' to close the program.")
         
         user_input = input("> ").strip()
@@ -39,7 +39,7 @@ def main():
         route, distance = solver.solve_exact(items)
         
         print(f"Optimal Route: {' -> '.join(route)}")
-        print(f"Total Travel Distance (Manhattan): {distance} units")
+        print(f"Total Travel Distance : {distance} units")
 
 if __name__ == "__main__":
     main()
